@@ -4,11 +4,15 @@ on:
     branches: [main]
 
 jobs:
-  lints:
+  build_and_check:
     name: Build & Check
     runs-on: ubuntu-latest
+    env:
+      FLAKE_URL: ${{ format('github:{0}/{1}', github.repository, github.ref) }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: DeterminateSystems/nix-installer-action@main
-      - run: nix build . --print-build-logs
-      - run: nix flake check . --print-build-logs
+      - name: Install nix
+        uses: DeterminateSystems/nix-installer-action@main
+      - name: Build with nix
+        run: nix build $FLAKE_URL --print-build-logs
+      - name: Run nix checks
+        run: nix flake check $FLAKE_URL --print-build-logs
