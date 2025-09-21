@@ -63,17 +63,14 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1755674813,
-        "narHash": "sha256-Eq/PmLDYoVcMIjqf8TGKRaxbAGrrD6//G8fpH8Uhseg=",
-        "rev": "992994dad917d72b1a94c9f46cf09a04d5f3274b",
-        "revCount": 3,
-        "type": "git",
-        "url": "file:./izumi_tui"
+        "path": "izumi_tui",
+        "type": "path"
       },
       "original": {
-        "type": "git",
-        "url": "file:./izumi_tui"
-      }
+        "path": "izumi_tui",
+        "type": "path"
+      },
+      "parent": []
     },
     "libizumi": {
       "inputs": {
@@ -81,17 +78,14 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1755678060,
-        "narHash": "sha256-NYszSyZO7SAkMqaJSfsuEQXTm3Hxj+uodaSoV35Zrkk=",
-        "rev": "0f76c999717ba3ea6b3ce9d8f50931f6e9a04728",
-        "revCount": 3,
-        "type": "git",
-        "url": "file:./libizumi"
+        "path": "libizumi",
+        "type": "path"
       },
       "original": {
-        "type": "git",
-        "url": "file:./libizumi"
-      }
+        "path": "libizumi",
+        "type": "path"
+      },
+      "parent": []
     },
     "nixpkgs": {
       "locked": {

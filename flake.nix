@@ -7,8 +7,8 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     
-    libizumi.url = "git+file:./libizumi";
-    izumi_tui.url = "git+file:./izumi_tui";
+    libizumi.url = ./libizumi;
+    izumi_tui.url = ./izumi_tui;
     izumi_tui.inputs.libizumi.follows = "libizumi";
   };
 
