@@ -16,7 +16,8 @@ This repository serves as a central hub for all the project components, providin
 
 - `ncurses`
 - `make` (build only)
-- `autotools` (build from source only, not needed in distribution packages)
+- `autotools` (build from source only, not needed in distribution packages) on Debian, Ubuntu, Arch
+- `autoconf`, `automake`, `libtool` (build from source only, not needed in distribution packages) on Fedora
 - `doxygen` (optional, for generating documentation)
 
 ## Building (and installing)
