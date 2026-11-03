@@ -1,4 +1,4 @@
-AC_INIT([izumi], [0.1.1])
+AC_INIT([izumi], [0.2.0alpha])
 
 AC_CONFIG_SRCDIR([examples])
 AC_CONFIG_AUX_DIR([build-aux])
